@@ -563,6 +563,103 @@ a {
     }
   }
 
+    /* Thank You */
+    .chiller.thankYou .details {
+      grid-template-columns: 1fr;
+      width: 50%;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 50px 30px;
+      width: 50%;
+      margin: 0 auto;
+      border-radius: 5px;
+      backdrop-filter: blur(3px);
+      margin-top: 8%;
+    }
+    .chiller.thankYou .details .side-info .info h1 {
+      font-size: 62px;
+    }
+    .chiller.thankYou .info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+    }
+    .chiller.thankYou .details .side-info h3 {
+      color: var(--third-color);
+      font-size: 22px;
+      text-align: center;
+    }
+  
+  .help-links {
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px auto;
+      transition: padding 0.25s ease-in-out 0s;
+      padding: 20px 0;
+      width: 100%;
+  }
+  .help-links .links, .help-links .links .sup a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .help-links .links .sup {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .help-links .links .sup a .icon {
+    border: 1px solid rgb(226, 229, 241);
+    background-color: white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 7px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .help-links .links .sup a .text {
+      padding-left: 10px;
+      font-weight: 600;
+      font-size: 22px;
+      color: var(--third-color);
+  }
+  
+  @media screen and (max-width: 991px) {
+    .chiller.thankYou .details {
+      width: 100%;
+    }
+    .chiller.thankYou .details .side-info .info h1 {
+      font-size: 36px;
+    }
+    .chiller.thankYou .details .side-info h3 {
+      font-size: 16px;
+      padding: 10px;
+    }
+    .help-links {
+      padding: 20px 10px;
+    }
+    .help-links .links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .help-links .links .sup {
+      margin-bottom: 10px;
+      padding: 0;
+    }
+    .chiller {
+      height: 100vh;
+    }
+    .chiller.thankYou .details {
+      margin-top: 30%;
+    }
+  }
+
   /* Arabic */
   .ar {
     direction: rtl;
